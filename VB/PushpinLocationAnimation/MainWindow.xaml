@@ -1,0 +1,27 @@
+﻿<Window x:Class="LocationAnimation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:dxm="http://schemas.devexpress.com/winfx/2008/xaml/map"
+        Title="MainWindow" Height="350" Width="525" >    
+    <Grid>
+        <dxm:MapControl>
+            <dxm:ImageTilesLayer>
+                <dxm:ImageTilesLayer.DataProvider>
+                    <dxm:OpenStreetMapDataProvider/>
+                </dxm:ImageTilesLayer.DataProvider>
+            </dxm:ImageTilesLayer>
+            <dxm:VectorLayer>
+                <dxm:MapPushpin  x:Name="pushpin" TraceDepth="30" TraceStroke="Red" >
+                    <dxm:MapPushpin.LocationChangedAnimation>
+                        <dxm:PushpinLocationAnimation  Duration="00:00:02"  Completed="PushpinLocationAnimation_Completed" >
+                            <dxm:PushpinLocationAnimation.EasingFunction>
+                                <BounceEase/>
+                            </dxm:PushpinLocationAnimation.EasingFunction>
+                        </dxm:PushpinLocationAnimation>
+                    </dxm:MapPushpin.LocationChangedAnimation>
+                </dxm:MapPushpin>
+            </dxm:VectorLayer>
+        </dxm:MapControl>
+    </Grid>
+</Window>
