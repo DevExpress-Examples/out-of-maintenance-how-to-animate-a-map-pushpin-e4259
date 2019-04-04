@@ -1,7 +1,7 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [MainWindow.xaml](./CS/PushpinLocationAnimation/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/PushpinLocationAnimation/MainWindow.xaml.vb))
+* [MainWindow.xaml](./CS/PushpinLocationAnimation/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/PushpinLocationAnimation/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/PushpinLocationAnimation/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/PushpinLocationAnimation/MainWindow.xaml.vb))
 <!-- default file list end -->
 # How to animate a map pushpin
