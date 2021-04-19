@@ -12,6 +12,7 @@
                 </dxm:ImageTilesLayer.DataProvider>
             </dxm:ImageTilesLayer>
             <dxm:VectorLayer>
+                <dxm:MapItemStorage>
                 <dxm:MapPushpin  x:Name="pushpin" TraceDepth="30" TraceStroke="Red" >
                     <dxm:MapPushpin.LocationChangedAnimation>
                         <dxm:PushpinLocationAnimation  Duration="00:00:02"  Completed="PushpinLocationAnimation_Completed" >
@@ -21,6 +22,7 @@
                         </dxm:PushpinLocationAnimation>
                     </dxm:MapPushpin.LocationChangedAnimation>
                 </dxm:MapPushpin>
+                    </dxm:MapItemStorage>
             </dxm:VectorLayer>
         </dxm:MapControl>
     </Grid>

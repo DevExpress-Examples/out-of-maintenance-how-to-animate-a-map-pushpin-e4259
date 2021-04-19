@@ -7,7 +7,7 @@ Namespace LocationAnimation
 
 	Partial Public Class MainWindow
 		Inherits Window
-		Private rand As New Random(CInt(Fix(DateTime.Now.Ticks)))
+		Dim rand As Random = New Random(CInt(DateTime.Now.Millisecond))
 
 		Public Sub New()
 			InitializeComponent()
