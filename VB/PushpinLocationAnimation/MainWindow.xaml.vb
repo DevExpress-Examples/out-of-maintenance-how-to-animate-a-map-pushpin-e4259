@@ -1,5 +1,4 @@
-﻿Imports Microsoft.VisualBasic
-Imports System.Windows
+﻿Imports System.Windows
 Imports DevExpress.Xpf.Map
 Imports System
 
@@ -7,7 +6,8 @@ Namespace LocationAnimation
 
 	Partial Public Class MainWindow
 		Inherits Window
-		Dim rand As Random = New Random(CInt(DateTime.Now.Millisecond))
+
+		Private rand As New Random(CInt(DateTime.Now.Ticks))
 
 		Public Sub New()
 			InitializeComponent()

@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:dxm="http://schemas.devexpress.com/winfx/2008/xaml/map"
-        Title="MainWindow" Height="350" Width="525" >
+        Title="MainWindow" Height="350" Width="525" >    
     <Grid>
         <dxm:MapControl>
             <dxm:ImageTilesLayer>
@@ -13,16 +13,16 @@
             </dxm:ImageTilesLayer>
             <dxm:VectorLayer>
                 <dxm:MapItemStorage>
-                    <dxm:MapPushpin  x:Name="pushpin" TraceDepth="30" TraceStroke="Red" >
-                        <dxm:MapPushpin.LocationChangedAnimation>
-                            <dxm:PushpinLocationAnimation  Duration="00:00:02"  Completed="PushpinLocationAnimation_Completed" >
-                                <dxm:PushpinLocationAnimation.EasingFunction>
-                                    <BounceEase/>
-                                </dxm:PushpinLocationAnimation.EasingFunction>
-                            </dxm:PushpinLocationAnimation>
-                        </dxm:MapPushpin.LocationChangedAnimation>
-                    </dxm:MapPushpin>
-                </dxm:MapItemStorage>
+                <dxm:MapPushpin  x:Name="pushpin" TraceDepth="30" TraceStroke="Red" >
+                    <dxm:MapPushpin.LocationChangedAnimation>
+                        <dxm:PushpinLocationAnimation  Duration="00:00:02"  Completed="PushpinLocationAnimation_Completed" >
+                            <dxm:PushpinLocationAnimation.EasingFunction>
+                                <BounceEase/>
+                            </dxm:PushpinLocationAnimation.EasingFunction>
+                        </dxm:PushpinLocationAnimation>
+                    </dxm:MapPushpin.LocationChangedAnimation>
+                </dxm:MapPushpin>
+                    </dxm:MapItemStorage>
             </dxm:VectorLayer>
         </dxm:MapControl>
     </Grid>
